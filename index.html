@@ -91,6 +91,50 @@
       color: var(--royal-blue);
     }
 
+    .products {
+      padding: 60px 20px;
+      background: white;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: var(--charcoal);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .product {
+      background: var(--light-grey);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 20px;
+      font-size: 1.4rem;
+      color: var(--royal-blue);
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
     @media (min-width: 768px) {
       header h1 {
         font-size: 2.5rem;
@@ -112,6 +156,28 @@
     <div class="hero-content">
       <h2>Scandinavian-inspired spa experiences in your own garden.</h2>
       <button>Book Private Viewing</button>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Our Hot Tubs</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="duo-internal.jpg" alt="Duo Internal" />
+        <h3>Duo Internal</h3>
+      </div>
+      <div class="product">
+        <img src="maxi-external.jpg" alt="Maxi External" />
+        <h3>Maxi External</h3>
+      </div>
+      <div class="product">
+        <img src="duo-external.jpg" alt="Duo External" />
+        <h3>Duo External</h3>
+      </div>
+      <div class="product">
+        <img src="maxi-external-2.jpg" alt="Maxi External 2" />
+        <h3>Maxi External</h3>
+      </div>
     </div>
   </section>
 </body>
